@@ -1,0 +1,22 @@
+<html>
+  <head>
+     <script src="http://192.168.83.130:3000/socket.io/socket.io.js"></script>
+    <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.17/socket.io.min.js"></script>
+  -->   <script>
+      var socket = io.connect('http://192.168.83.130:3000');
+      socket.on('new-item', function (data) {
+    	  console.log(data);
+    	var msg=JSON.parse(data);
+    	 
+        document.getElementById("items").innerHTML += "<li>" + msg[0][0] + "</li>"+"<li>" + msg[0][1] + "</li>";
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Items</h1>
+    <ul id="items">
+      <li>Existing item 1</li>
+      <li>Existing item 2</li>
+    </ul>
+  </body>
+</html>
