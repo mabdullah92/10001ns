@@ -1,3 +1,8 @@
+/*
+ * Manage Session in Node.js and ExpressJS
+ * Author : Shahid Shaikh
+ * Version : 0.0.1
+*/
 var express		=	require('express');
 var session		=	require('express-session');
 var bodyParser  	= 	require('body-parser');
@@ -6,7 +11,7 @@ var app			=	express();
 app.set('views', __dirname + '/views');
 app.engine('html', require('ejs').renderFile);
 
-app.use(session({secret: 'somekey',saveUninitialized: true,resave: true}));
+app.use(session({secret: 'ssshhhhh',saveUninitialized: true,resave: true}));
 app.use(bodyParser.json());      
 app.use(bodyParser.urlencoded({extended: true}));
 

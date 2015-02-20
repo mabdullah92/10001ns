@@ -1,7 +1,7 @@
 LaunchURL=http\://server/folder
 Save\ Mode=ON_SAVE
-SelectedHostGUID=1a357cc6-08a3-440e-8e46-8b43f2e30ef0
-UploadFolder=/demoservice
+SelectedHostGUID=bab9e825-5159-4a70-bf09-1cb7f27fe1a1
+UploadFolder=/10001ns
 eclipse.preferences.version=1
 isLocalProjectEnabled=false
 isRemoteProjectEnabled=true
